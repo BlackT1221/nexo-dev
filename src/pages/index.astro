@@ -1,0 +1,204 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import heroImage from "../assets/indexImage.svg";
+---
+
+<MainLayout title="Software Solutions">
+  <section
+    class="flex flex-col items-center justify-center text-center px-6 py-20 md:py-28 bg-white"
+    id="inicio"
+  >
+    <h1
+      class="text-4xl md:text-5xl font-extrabold text-gray-900 max-w-3xl leading-tight"
+    >
+      Desarrollamos <span class="text-primary">software a medida</span> para tu empresa
+      o proyecto
+    </h1>
+    <p class="mt-6 text-gray-600 max-w-2xl text-lg">
+      Creamos soluciones digitales personalizadas que impulsan la eficiencia, la
+      innovación y el crecimiento de tu negocio. Ya seas una startup, pyme o
+      empresa establecida, transformamos tus ideas en productos funcionales y
+      modernos.
+    </p>
+
+    <div class="mt-8">
+      <a
+        href="#contacto"
+        class="inline-block border-2 border-primary text-primary font-semibold px-6 py-3 rounded-full hover:bg-primary hover:text-white transition duration-300"
+      >
+        Contáctanos
+      </a>
+    </div>
+
+    <div class="mt-14 flex justify-center">
+      <img
+        src={heroImage.src}
+        alt="Equipo desarrollando software"
+        class="w-full max-w-xl"
+      />
+    </div>
+  </section>
+
+  <section
+    id="servicios"
+    class="px-6 py-20 md:py-28 bg-white flex flex-col items-center text-center"
+  >
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+      Nuestros <span class="text-primary">servicios</span>
+    </h2>
+    <p class="text-gray-600 max-w-2xl mb-12">
+      Ofrecemos soluciones tecnológicas adaptadas a las necesidades de cada
+      cliente. Desde el desarrollo de software personalizado hasta la
+      optimización de procesos digitales.
+    </p>
+
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl">
+      <!-- Servicio 1 -->
+      <div
+        class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100"
+      >
+        <div class="text-primary mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 h-10 mx-auto"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 21h8m-4-4v4m0-4a8 8 0 110-16 8 8 0 010 16z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          Desarrollo a medida
+        </h3>
+        <p class="text-gray-600">
+          Creamos aplicaciones web y sistemas personalizados que se ajustan
+          exactamente a tus necesidades y procesos.
+        </p>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div
+        class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100"
+      >
+        <div class="text-primary mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 h-10 mx-auto"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 17v2h6v-2M9 7v2h6V7m-9 6h12"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Diseño UI/UX</h3>
+        <p class="text-gray-600">
+          Diseñamos interfaces modernas, intuitivas y funcionales que garantizan
+          una experiencia de usuario excepcional.
+        </p>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div
+        class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100"
+      >
+        <div class="text-primary mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 h-10 mx-auto"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 8v4l3 3m6 4H3a1 1 0 01-1-1V5a1 1 0 011-1h18a1 1 0 011 1v13a1 1 0 01-1 1z"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          Automatización y APIs
+        </h3>
+        <p class="text-gray-600">
+          Conectamos tus sistemas con integraciones potentes y automatizamos
+          tareas repetitivas para aumentar la productividad.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="contacto"
+    class="flex flex-col items-center justify-center text-center px-6 py-20 md:py-28 bg-gray-50"
+  >
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+      Contáctanos 📩
+    </h2>
+    <p class="text-gray-600 max-w-2xl mb-10">
+      ¿Tienes una idea, proyecto o negocio que necesita una solución digital?
+      Escríbenos y te ayudaremos a hacerlo realidad.
+    </p>
+
+    <form
+      class="w-full max-w-lg bg-white shadow-lg rounded-2xl p-8 flex flex-col gap-4 border border-gray-100"
+    >
+      <div class="flex flex-col text-left">
+        <label for="nombre" class="font-medium text-gray-700 mb-1">Nombre</label
+        >
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Tu nombre"
+          class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
+          required
+        />
+      </div>
+
+      <div class="flex flex-col text-left">
+        <label for="email" class="font-medium text-gray-700 mb-1"
+          >Correo electrónico</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="tucorreo@ejemplo.com"
+          class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
+          required
+        />
+      </div>
+
+      <div class="flex flex-col text-left">
+        <label for="mensaje" class="font-medium text-gray-700 mb-1"
+          >Mensaje</label
+        >
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="4"
+          placeholder="Cuéntanos un poco sobre tu proyecto..."
+          class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+          required></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="mt-4 bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-dark transition duration-300"
+      >
+        Enviar mensaje
+      </button>
+    </form>
+  </section>
+</MainLayout>
