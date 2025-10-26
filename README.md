@@ -1,43 +1,50 @@
-# Astro Starter Kit: Minimal
+# 🚀 Software Solutions — Landing Page
 
-```sh
-npm create astro@latest -- --template minimal
+Landing page moderna desarrollada con **Astro** y **TailwindCSS**.  
+Este proyecto presenta los servicios de desarrollo de software a medida de _Software Solutions_, con un diseño limpio, responsive y optimizado.
+
+---
+
+## 🧩 Tecnologías utilizadas
+
+- [Astro](https://astro.build/) — Framework ultrarrápido para sitios web estáticos y híbridos
+- [TailwindCSS](https://tailwindcss.com/) — Framework CSS para estilos utilitarios
+- [Node.js](https://nodejs.org/) — Entorno para ejecutar y gestionar dependencias
+- [TypeScript (opcional)](https://www.typescriptlang.org/) — Tipado para componentes y scripts
+
+---
+
+## ⚙️ Instalación y uso
+
+1. **Clona este repositorio**
+
+   ```bash
+   git clone https://github.com/tuusuario/software-solutions.git
+   cd software-solutions
+   ```
+
+2. **Instala las dependencias**
+   ```bash
+   npm install
+   ```
+3. **Inicia el servidor de desarrollo**
+   ```bash
+   npm run dev
+   ```
+4. **Inicia el servidor de desarrollo**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+📁 Estructura del proyecto
+
+```bash
+src/
+├── components/    # Navbar, Footer, etc.
+├── layouts/       # Layout principal de la página
+├── pages/         # Secciones (index.astro, etc.)
+├── styles/        # Archivos CSS globales
+└── assets/        # Imágenes y recursos estáticos
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
