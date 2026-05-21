@@ -1,9 +1,24 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import heroImage from "../assets/indexImage.svg";
+// Aquí puedes importar una captura de pantalla de tu sistema web ficticio
+// import mockupImage from "../assets/mockup-taller.png"; 
 ---
 
-<MainLayout title="Software Solutions">
+<MainLayout title="Nexo Digital | Sistemas Web y Automatización para PyMEs">
+  
+  <a
+    href="https://api.whatsapp.com/send?phone=573000000000&text=Hola%20Nexo%20Digital,%20me%20gustar%C3%ADa%20agendar%20la%20consultor%C3%ADa%20gratuita%20de%20diagn%C3%B3stico%20para%20mi%20negocio."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition duration-300 flex items-center justify-center"
+    aria-label="Hablar por WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.4.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.845-4.414 9.848-9.843.002-2.63-1.023-5.101-2.884-6.964C17.16 1.944 14.685 1.18 12.01 1.18 6.58 1.18 2.165 5.594 2.162 11.023c-.001 1.83.477 3.62 1.39 5.2l-.157.572-1.042 3.805 3.898-1.023.596.354z"/>
+    </svg>
+  </a>
+
   <section
     class="flex flex-col items-center justify-center text-center px-6 py-20 md:py-28 bg-white"
     id="inicio"
@@ -11,29 +26,33 @@ import heroImage from "../assets/indexImage.svg";
     <h1
       class="text-4xl md:text-5xl font-extrabold text-gray-900 max-w-3xl leading-tight"
     >
-      Desarrollamos <span class="text-primary">software a medida</span> para tu empresa
-      o proyecto
+      Digitaliza tu operación y <span class="text-primary">elimina el desorden</span> de los Excel infinitos
     </h1>
     <p class="mt-6 text-gray-600 max-w-2xl text-lg">
-      Creamos soluciones digitales personalizadas que impulsan la eficiencia, la
-      innovación y el crecimiento de tu negocio. Ya seas una startup, pyme o
-      empresa establecida, transformamos tus ideas en productos funcionales y
-      modernos.
+      Ayudamos a pequeñas y medianas empresas a ahorrar horas de trabajo manual. Creamos sistemas web internos a medida y automatizamos tus flujos diarios para que tu negocio funcione en piloto automático.
     </p>
 
-    <div class="mt-8">
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a
+        href="https://api.whatsapp.com/send?phone=573000000000&text=Hola%20Nexo%20Digital,%20me%20gustar%C3%ADa%20agendar%20la%20consultor%C3%ADa%20gratuita%20de%20diagn%C3%B3stico%20para%20mi%20negocio."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#20ba56] transition duration-300 shadow-md"
+      >
+        Agendar Diagnóstico Gratis (WhatsApp)
+      </a>
       <a
         href="#contacto"
         class="inline-block border-2 border-primary text-primary font-semibold px-6 py-3 rounded-full hover:bg-primary hover:text-white transition duration-300"
       >
-        Contáctanos
+        Escribir por Correo
       </a>
     </div>
 
     <div class="mt-14 flex justify-center">
       <img
         src={heroImage.src}
-        alt="Equipo desarrollando software"
+        alt="Automatización de procesos de negocio"
         class="w-full max-w-xl"
       />
     </div>
@@ -41,135 +60,119 @@ import heroImage from "../assets/indexImage.svg";
 
   <section
     id="servicios"
-    class="px-6 py-20 md:py-28 bg-white flex flex-col items-center text-center"
+    class="px-6 py-20 md:py-28 bg-gray-50 flex flex-col items-center text-center"
   >
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-      Nuestros <span class="text-primary">servicios</span>
+      Cómo transformamos <span class="text-primary">tu negocio</span>
     </h2>
     <p class="text-gray-600 max-w-2xl mb-12">
-      Ofrecemos soluciones tecnológicas adaptadas a las necesidades de cada
-      cliente. Desde el desarrollo de software personalizado hasta la
-      optimización de procesos digitales.
+      No te vendemos código complejo. Te entregamos herramientas sencillas que resuelven los problemas reales de tu día a día operativo.
     </p>
 
     <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl">
-      <!-- Servicio 1 -->
+      <!-- Servicio 1: Sistemas Web -->
       <div
-        class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100"
+        class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 text-left"
       >
-        <div class="text-primary mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 h-10 mx-auto"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M8 21h8m-4-4v4m0-4a8 8 0 110-16 8 8 0 010 16z"></path>
+        <div class="text-primary mb-4 text-center sm:text-left">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
           </svg>
         </div>
         <h3 class="text-xl font-semibold text-gray-900 mb-3">
-          Desarrollo a medida
+          Sistemas Web Internos
         </h3>
         <p class="text-gray-600">
-          Creamos aplicaciones web y sistemas personalizados que se ajustan
-          exactamente a tus necesidades y procesos.
+          Diseñamos paneles de administración, controles de inventario y plataformas internas pensadas para que tú y tu equipo de trabajo gestionen todo desde un solo lugar, sin pérdida de datos.
         </p>
       </div>
 
-      <!-- Servicio 2 -->
+      <!-- Servicio 2: Automatización -->
       <div
-        class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100"
+        class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 text-left"
       >
-        <div class="text-primary mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 h-10 mx-auto"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 17v2h6v-2M9 7v2h6V7m-9 6h12"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-semibold text-gray-900 mb-3">Diseño UI/UX</h3>
-        <p class="text-gray-600">
-          Diseñamos interfaces modernas, intuitivas y funcionales que garantizan
-          una experiencia de usuario excepcional.
-        </p>
-      </div>
-
-      <!-- Servicio 3 -->
-      <div
-        class="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100"
-      >
-        <div class="text-primary mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 h-10 mx-auto"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 8v4l3 3m6 4H3a1 1 0 01-1-1V5a1 1 0 011-1h18a1 1 0 011 1v13a1 1 0 01-1 1z"
-            ></path>
+        <div class="text-primary mb-4 text-center sm:text-left">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
         </div>
         <h3 class="text-xl font-semibold text-gray-900 mb-3">
-          Automatización y APIs
+          Automatización de Procesos
         </h3>
         <p class="text-gray-600">
-          Conectamos tus sistemas con integraciones potentes y automatizamos
-          tareas repetitivas para aumentar la productividad.
+          Conectamos tus herramientas (Excel, WhatsApp, Gmail, CRM). Hacemos que las tareas repetitivas como enviar facturas, reportes o alertas de seguimiento se ejecuten solas.
+        </p>
+      </div>
+
+      <!-- Servicio 3: Integración WhatsApp -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 text-left"
+      >
+        <div class="text-primary mb-4 text-center sm:text-left">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          Canales de Venta Conectados
+        </h3>
+        <p class="text-gray-600">
+          Centralizamos la información de tus prospectos y clientes. Evita que un pedido se quede sin atender integrando tus formularios web directamente con alertas de mensajería instantánea.
         </p>
       </div>
     </div>
   </section>
 
+  <section id="concepto" class="px-6 py-20 md:py-28 bg-white flex flex-col items-center">
+    <div class="max-w-5xl w-full grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-primary font-bold tracking-wider text-sm uppercase block mb-2">Concepto en Acción</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-left">
+          Caso de estudio: El Taller Mecánico Autónomo
+        </h2>
+        <p class="text-gray-600 mb-4 text-left">
+          Diseñamos un prototipo funcional para demostrar el poder de un sistema web combinado con automatización:
+        </p>
+        <ul class="text-left text-gray-600 space-y-3 list-disc list-inside mb-6">
+          <li><strong class="text-gray-900">Gestión Web:</strong> El administrador registra el estado del vehículo en un panel limpio desde el celular o PC.</li>
+          <li><strong class="text-gray-900">Flujo Automatizado:</strong> Cuando el mecánico marca el carro como "Listo", el sistema genera automáticamente la factura en la nube.</li>
+          <li><strong class="text-gray-900">Notificación al Cliente:</strong> Sin intervención humana, se dispara un mensaje de WhatsApp personalizado al cliente avisándole que ya puede retirar su carro.</li>
+        </ul>
+      </div>
+      <div class="bg-gray-100 rounded-2xl p-4 border border-gray-200 flex justify-center items-center h-64 md:h-96 shadow-inner">
+        <span class="text-gray-400 italic text-center px-4">[ Inserta aquí una captura limpia de la pantalla de tu proyecto prototipo o flujo de N8N ]</span>
+      </div>
+    </div>
+  </section>
+  
   <section
     id="contacto"
     class="flex flex-col items-center justify-center text-center px-6 py-20 md:py-28 bg-gray-50"
   >
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-      Contáctanos 📩
+      ¿Hablamos sobre tu negocio? 📩
     </h2>
     <p class="text-gray-600 max-w-2xl mb-10">
-      ¿Tienes una idea, proyecto o negocio que necesita una solución digital?
-      Escríbenos y te ayudaremos a hacerlo realidad.
+      Cuéntanos qué proceso te quita más tiempo o qué sistema necesitas construir y te ofreceremos un diagnóstico completamente gratuito.
     </p>
 
     <form
       class="w-full max-w-lg bg-white shadow-lg rounded-2xl p-8 flex flex-col gap-4 border border-gray-100"
     >
       <div class="flex flex-col text-left">
-        <label for="nombre" class="font-medium text-gray-700 mb-1">Nombre</label
-        >
+        <label for="nombre" class="font-medium text-gray-700 mb-1">Nombre de contacto</label>
         <input
           type="text"
           id="nombre"
           name="nombre"
-          placeholder="Tu nombre"
+          placeholder="Tu nombre o el de tu empresa"
           class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
           required
         />
       </div>
 
       <div class="flex flex-col text-left">
-        <label for="email" class="font-medium text-gray-700 mb-1"
-          >Correo electrónico</label
-        >
+        <label for="email" class="font-medium text-gray-700 mb-1">Correo electrónico</label>
         <input
           type="email"
           id="email"
@@ -181,24 +184,40 @@ import heroImage from "../assets/indexImage.svg";
       </div>
 
       <div class="flex flex-col text-left">
-        <label for="mensaje" class="font-medium text-gray-700 mb-1"
-          >Mensaje</label
-        >
+        <label for="mensaje" class="font-medium text-gray-700 mb-1">¿Qué proceso te gustaría optimizar o automatizar?</label>
         <textarea
           id="mensaje"
           name="mensaje"
           rows="4"
-          placeholder="Cuéntanos un poco sobre tu proyecto..."
+          placeholder="Ej: Tengo un desorden manejando mis clientes en Excel o necesito un panel web interno..."
           class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary resize-none"
           required></textarea>
       </div>
 
       <button
         type="submit"
-        class="mt-4 bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-dark transition duration-300"
+        class="mt-4 bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition duration-300"
       >
-        Enviar mensaje
+        Enviar Solicitud por Correo
       </button>
+
+      <div class="relative flex py-2 items-center">
+        <div class="flex-grow border-t border-gray-300"></div>
+        <span class="flex-shrink mx-4 text-gray-400 text-sm font-medium">O prefiéres</span>
+        <div class="flex-grow border-t border-gray-300"></div>
+      </div>
+
+      <a
+        href="https://api.whatsapp.com/send?phone=573000000000&text=Hola%20Nexo%20Digital,%20me%20gustar%C3%ADa%20agendar%20la%20consultor%C3%ADa%20gratuita%20de%20diagn%C3%B3stico%20para%20mi%20negocio."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-[#25D366] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#20ba56] transition duration-300 flex items-center justify-center gap-2"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.4.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.845-4.414 9.848-9.843.002-2.63-1.023-5.101-2.884-6.964C17.16 1.944 14.685 1.18 12.01 1.18 6.58 1.18 2.165 5.594 2.162 11.023c-.001 1.83.477 3.62 1.39 5.2l-.157.572-1.042 3.805 3.898-1.023.596.354z"/>
+        </svg>
+        Chatear con un asesor por WhatsApp
+      </a>
     </form>
   </section>
 </MainLayout>
