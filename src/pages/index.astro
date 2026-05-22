@@ -1,11 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import heroImage from "../assets/indexImage.svg";
-// Aquí puedes importar una captura de pantalla de tu sistema web ficticio
-// import mockupImage from "../assets/mockup-taller.png";
 ---
 
 <MainLayout title="Nexo Dev | Sistemas Web y Automatización para PyMEs">
+  
   <a
     href="https://api.whatsapp.com/send?phone=573000000000&text=Hola%20Nexo%20Dev,%20me%20gustar%C3%ADa%20agendar%20la%20consultor%C3%ADa%20gratuita%20de%20diagn%C3%B3stico%20para%20mi%20negocio."
     target="_blank"
@@ -13,37 +12,23 @@ import heroImage from "../assets/indexImage.svg";
     class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition duration-300 flex items-center justify-center"
     aria-label="Hablar por WhatsApp"
   >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="w-7 h-7"
-      fill="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.4.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.845-4.414 9.848-9.843.002-2.63-1.023-5.101-2.884-6.964C17.16 1.944 14.685 1.18 12.01 1.18 6.58 1.18 2.165 5.594 2.162 11.023c-.001 1.83.477 3.62 1.39 5.2l-.157.572-1.042 3.805 3.898-1.023.596.354z"
-      ></path>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.4.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.845-4.414 9.848-9.843.002-2.63-1.023-5.101-2.884-6.964C17.16 1.944 14.685 1.18 12.01 1.18 6.58 1.18 2.165 5.594 2.162 11.023c-.001 1.83.477 3.62 1.39 5.2l-.157.572-1.042 3.805 3.898-1.023.596.354z"></path>
     </svg>
   </a>
 
   <section
-    class="flex flex-col items-center justify-center text-center px-6 py-20 md:py-28 bg-white"
+    class="flex flex-col items-center justify-center text-center px-6 pt-28 pb-20 md:pt-36 md:pb-28 bg-white"
     id="inicio"
   >
-    <h1
-      class="text-4xl md:text-5xl font-extrabold text-gray-900 max-w-3xl leading-tight"
-    >
-      Digitaliza tu operación y <span class="text-primary">elimina el desorden</span
-      > de los Excel infinitos
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 max-w-3xl leading-tight">
+      Digitaliza tu operación y <span class="text-primary">elimina el desorden</span> de los Excel infinitos
     </h1>
     <p class="mt-6 text-gray-600 max-w-2xl text-lg">
-      Ayudamos a pequeñas y medianas empresas a ahorrar horas de trabajo manual.
-      Creamos sistemas web internos a medida y automatizamos tus flujos diarios
-      para que tu negocio funcione en piloto automático.
+      Ayudamos a pequeñas y medianas empresas a ahorrar horas de trabajo manual. Creamos sistemas web internos a medida y automatizamos tus flujos diarios para que tu negocio funcione en piloto automático.
     </p>
 
-    <div
-      class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center"
-    >
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
       <a
         href="https://api.whatsapp.com/send?phone=573000000000&text=Hola%20Nexo%20Dev,%20me%20gustar%C3%ADa%20agendar%20la%20consultor%C3%ADa%20gratuita%20de%20diagn%C3%B3stico%20para%20mi%20negocio."
         target="_blank"
@@ -61,11 +46,7 @@ import heroImage from "../assets/indexImage.svg";
     </div>
 
     <div class="mt-14 flex justify-center">
-      <img
-        src={heroImage.src}
-        alt="Automatización de procesos de negocio"
-        class="w-full max-w-xl"
-      />
+      <img src={heroImage.src} alt="Automatización de procesos de negocio" class="w-full max-w-xl" />
     </div>
   </section>
 
@@ -77,193 +58,232 @@ import heroImage from "../assets/indexImage.svg";
       Cómo transformamos <span class="text-primary">tu negocio</span>
     </h2>
     <p class="text-gray-600 max-w-2xl mb-12">
-      No te vendemos código complejo. Te entregamos herramientas sencillas que
-      resuelven los problemas reales de tu día a día operativo.
+      No te vendemos código complejo. Te entregamos herramientas sencillas que resuelven los problemas reales de tu día a día operativo.
     </p>
 
     <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl">
-      <!-- Servicio 1: Sistemas Web -->
-      <div
-        class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 text-left"
-      >
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 text-left">
         <div class="text-primary mb-4 text-center sm:text-left">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 h-10"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-            ></path>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 mb-3">
-          Sistemas Web Internos
-        </h3>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Sistemas Web Internos</h3>
         <p class="text-gray-600">
-          Diseñamos paneles de administración, controles de inventario y
-          plataformas internas pensadas para que tú y tu equipo de trabajo
-          gestionen todo desde un solo lugar, sin pérdida de datos.
+          Diseñamos paneles de administración, controles de inventario y plataformas internas pensadas para que tú y tu equipo de trabajo gestionen todo desde un solo lugar, sin pérdida de datos.
         </p>
       </div>
 
-      <!-- Servicio 2: Automatización -->
-      <div
-        class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 text-left"
-      >
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 text-left">
         <div class="text-primary mb-4 text-center sm:text-left">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 h-10"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 mb-3">
-          Automatización de Procesos
-        </h3>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Automatización de Procesos</h3>
         <p class="text-gray-600">
-          Conectamos tus herramientas (Excel, WhatsApp, Gmail, CRM). Hacemos que
-          las tareas repetitivas como enviar facturas, reportes o alertas de
-          seguimiento se ejecuten solas.
+          Conectamos tus herramientas (Excel, WhatsApp, Gmail, CRM). Hacemos que las tareas repetitivas como enviar facturas, reportes o alertas de seguimiento se ejecuten solas.
         </p>
       </div>
 
-      <!-- Servicio 3: Integración WhatsApp -->
-      <div
-        class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 text-left"
-      >
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 text-left">
         <div class="text-primary mb-4 text-center sm:text-left">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 h-10"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-            ></path>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 mb-3">
-          Canales de Venta Conectados
-        </h3>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Canales de Venta Conectados</h3>
         <p class="text-gray-600">
-          Centralizamos la información de tus prospectos y clientes. Evita que
-          un pedido se quede sin atender integrando tus formularios web
-          directamente con alertas de mensajería instantánea.
+          Centralizamos la información de tus prospectos y clientes. Evita que un pedido se quede sin atender integrando tus formularios web directamente con alertas de mensajería instantánea.
         </p>
       </div>
     </div>
   </section>
 
-  <section
-    class="py-20 px-6 bg-white border-t border-gray-100 flex flex-col items-center"
-  >
+  <section id="laboratorio" class="bg-white py-20 md:py-28 border-t border-gray-100">
+    <div class="max-w-3xl mx-auto text-center px-6 mb-16">
+      <span class="bg-orange-50 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        Entorno de Pruebas Activo
+      </span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-4 leading-tight">
+        Nuestro <span class="text-primary">Laboratorio</span> de Soluciones
+      </h2>
+      <p class="mt-4 text-gray-600 text-lg">
+        Diseñamos prototipos funcionales reales para demostrar cómo el software a medida y la automatización impactan directamente en las métricas operativas.
+      </p>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 mb-20">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex flex-col justify-between">
+          <div>
+            <span class="text-gray-400 text-sm font-medium uppercase tracking-wider">Tiempo Guardado</span>
+            <h3 class="text-3xl font-bold text-gray-900 mt-2">~140 hrs</h3>
+            <p class="text-gray-500 text-sm mt-1">Al mes en tareas repetitivas de digitación.</p>
+          </div>
+          <div class="mt-4 text-xs font-semibold text-green-600 bg-green-50 px-2 py-1 rounded-md inline-block w-max">
+            + 85% Eficiencia operativa
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex flex-col justify-between">
+          <div>
+            <span class="text-gray-400 text-sm font-medium uppercase tracking-wider">Margen de Error</span>
+            <h3 class="text-3xl font-bold text-gray-900 mt-2">0%</h3>
+            <p class="text-gray-500 text-sm mt-1">Pérdida de datos al eliminar el traspaso manual a Excel.</p>
+          </div>
+          <div class="mt-4 text-xs font-semibold text-green-600 bg-green-50 px-2 py-1 rounded-md inline-block w-max">
+            Precisión garantizada
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex flex-col justify-between">
+          <div>
+            <span class="text-gray-400 text-sm font-medium uppercase tracking-wider">Velocidad de Alerta</span>
+            <h3 class="text-3xl font-bold text-gray-900 mt-2">&lt; 3 seg</h3>
+            <p class="text-gray-500 text-sm mt-1">Tarda el cliente en recibir su notificación/factura por WhatsApp.</p>
+          </div>
+          <div class="mt-4 text-xs font-semibold text-primary bg-orange-50 px-2 py-1 rounded-md inline-block w-max">
+            Flujo síncrono instantáneo
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex flex-col justify-between">
+          <div>
+            <span class="text-gray-400 text-sm font-medium uppercase tracking-wider">Retención de Clientes</span>
+            <h3 class="text-3xl font-bold text-gray-900 mt-2">+24%</h3>
+            <p class="text-gray-500 text-sm mt-1">Mejora en la percepción de servicio al cliente.</p>
+          </div>
+          <div class="mt-4 text-xs font-semibold text-green-600 bg-green-50 px-2 py-1 rounded-md inline-block w-max">
+            Fidelización digital
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl font-bold text-gray-900">Caso de uso: El Taller Conectado</h3>
+        <p class="text-gray-600 mt-2">
+          Un desglose técnico-operativo de cómo transformamos un negocio tradicional de papel/Excel en un ecosistema inteligente.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="bg-primary text-white font-bold w-10 h-10 rounded-full flex items-center justify-center shrink-0 shadow-md">1</div>
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 w-full">
+            <h4 class="text-lg font-bold text-gray-900 mb-2">Ingreso y Panel de Control Web</h4>
+            <p class="text-gray-600 text-sm">
+              Desarrollamos una interfaz web ultraligera optimizada para móviles. Cuando un vehículo ingresa, el mecánico actualiza el estado a <span class="font-semibold text-gray-800">"En Diagnóstico"</span> o <span class="font-semibold text-gray-800">"Listo para entrega"</span>. Sin papeles.
+            </p>
+            <div class="mt-4 bg-gray-900 rounded-lg p-3 text-xs text-green-400 font-mono">// Event Trigger: Status updated to 'ready' in Database</div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="bg-primary text-white font-bold w-10 h-10 rounded-full flex items-center justify-center shrink-0 shadow-md">2</div>
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 w-full">
+            <h4 class="text-lg font-bold text-gray-900 mb-2">El Motor de Automatización (Webhook Backend)</h4>
+            <p class="text-gray-600 text-sm">
+              Al cambiar el estado a "Listo", un webhook dispara un flujo automatizado en el servidor. Este proceso conecta la base de datos con un motor generador de PDFs para armar la cuenta de cobro dinámicamente en segundos.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="bg-primary text-white font-bold w-10 h-10 rounded-full flex items-center justify-center shrink-0 shadow-md">3</div>
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 w-full">
+            <h4 class="text-lg font-bold text-gray-900 mb-2">Notificación Instantánea vía WhatsApp API</h4>
+            <p class="text-gray-600 text-sm">
+              El sistema envía una petición estructurada a la API de WhatsApp. El cliente final recibe un mensaje automatizado con el enlace de descarga de su factura e informe técnico sin que nadie gaste tiempo redactando chats manuales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-6 bg-gray-50 border-t border-gray-100 flex flex-col items-center">
     <div class="max-w-5xl w-full text-center mb-12">
       <h2 class="text-3xl font-bold text-gray-900">
         De la idea a la realidad en <span class="text-primary">4 pasos</span>
       </h2>
-      <p class="text-gray-600 mt-2">
-        Así trabajamos para asegurar que tu sistema quede exactamente como lo
-        necesitas.
-      </p>
+      <p class="text-gray-600 mt-2">Así trabajamos para asegurar que tu sistema quede exactamente como lo necesitas.</p>
     </div>
 
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl w-full">
-      <div class="relative p-6 bg-gray-50 rounded-2xl border border-gray-100">
-        <span
-          class="absolute -top-4 left-6 bg-primary text-white font-bold text-sm px-3 py-1 rounded-full shadow-sm"
-          >Paso 1</span
-        >
-        <h3 class="text-lg font-bold text-gray-900 mt-2 mb-2">
-          1. Diagnóstico Gratis
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Hablamos por 15 minutos en una llamada para entender tu operativo
-          actual y ver como te podemos ayudar.
-        </p>
+      <div class="relative p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
+        <span class="absolute -top-4 left-6 bg-primary text-white font-bold text-sm px-3 py-1 rounded-full shadow-sm">Paso 1</span>
+        <h3 class="text-lg font-bold text-gray-900 mt-2 mb-2">1. Diagnóstico Gratis</h3>
+        <p class="text-gray-600 text-sm">Hablamos por 15 minutos en una llamada para entender tu operativo actual y ver cómo te podemos ayudar.</p>
       </div>
 
-      <div class="relative p-6 bg-gray-50 rounded-2xl border border-gray-100">
-        <span
-          class="absolute -top-4 left-6 bg-primary text-white font-bold text-sm px-3 py-1 rounded-full shadow-sm"
-          >Paso 2</span
-        >
-        <h3 class="text-lg font-bold text-gray-900 mt-2 mb-2">
-          2. Propuesta Visual
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Te presentamos un boceto o mapa de flujo de cómo se conectarán tus
-          herramientas y el costo cerrado del proyecto.
-        </p>
+      <div class="relative p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
+        <span class="absolute -top-4 left-6 bg-primary text-white font-bold text-sm px-3 py-1 rounded-full shadow-sm">Paso 2</span>
+        <h3 class="text-lg font-bold text-gray-900 mt-2 mb-2">2. Propuesta Visual</h3>
+        <p class="text-gray-600 text-sm">Te presentamos un boceto o mapa de flujo de cómo se conectarán tus herramientas y el costo cerrado del proyecto.</p>
       </div>
 
-      <div class="relative p-6 bg-gray-50 rounded-2xl border border-gray-100">
-        <span
-          class="absolute -top-4 left-6 bg-primary text-white font-bold text-sm px-3 py-1 rounded-full shadow-sm"
-          >Paso 3</span
-        >
-        <h3 class="text-lg font-bold text-gray-900 mt-2 mb-2">
-          3. Desarrollo Ágil
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Construimos tu panel web o configuramos los flujos de automatización
-          en tiempo récord, dándote accesos para pruebas.
-        </p>
+      <div class="relative p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
+        <span class="absolute -top-4 left-6 bg-primary text-white font-bold text-sm px-3 py-1 rounded-full shadow-sm">Paso 3</span>
+        <h3 class="text-lg font-bold text-gray-900 mt-2 mb-2">3. Desarrollo Ágil</h3>
+        <p class="text-gray-600 text-sm">Construimos tu panel web o configuramos los flujos de automatización en tiempo récord, dándote accesos para pruebas.</p>
       </div>
 
-      <div class="relative p-6 bg-gray-50 rounded-2xl border border-gray-100">
-        <span
-          class="absolute -top-4 left-6 bg-primary text-white font-bold text-sm px-3 py-1 rounded-full shadow-sm"
-          >Paso 4</span
-        >
-        <h3 class="text-lg font-bold text-gray-900 mt-2 mb-2">
-          4. Soporte Continuo
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Lanzamos la solución y te acompañamos mes a mes para asegurar que todo
-          siga corriendo sin errores en la nube.
-        </p>
+      <div class="relative p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
+        <span class="absolute -top-4 left-6 bg-primary text-white font-bold text-sm px-3 py-1 rounded-full shadow-sm">Paso 4</span>
+        <h3 class="text-lg font-bold text-gray-900 mt-2 mb-2">4. Soporte Continuo</h3>
+        <p class="text-gray-600 text-sm">Lanzamos la solución y te acompañamos mes a mes para asegurar que todo siga corriendo sin errores en la nube.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-col items-center justify-center text-center px-6 py-20 md:py-28 bg-white border-t border-gray-100">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900">
+          Preguntas <span class="text-primary">Frecuentes</span>
+        </h2>
+        <p class="text-gray-600 mt-2">Despeja tus dudas antes de empezar.</p>
+      </div>
+
+      <div class="space-y-6 text-left">
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+          <h3 class="text-base font-bold text-gray-900 mb-2">¿Tengo que pagar licencias mensuales caras de software?</h3>
+          <p class="text-gray-600 text-sm">No necesariamente. Intentamos usar herramientas de código abierto o servidores propios económicos (VPS) para que tu costo de mantenimiento sea el mínimo posible.</p>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+          <h3 class="text-base font-bold text-gray-900 mb-2">¿Cuánto cuesta un proyecto a medida?</h3>
+          <p class="text-gray-600 text-sm">Depende de la complejidad. Una automatización sencilla de flujos puede arrancar desde un valor muy accesible, mientras que un sistema web interno completo varía según las funciones. Te damos un precio cerrado en la propuesta.</p>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+          <h3 class="text-base font-bold text-gray-900 mb-2">¿Qué pasa si algo se daña o deja de funcionar?</h3>
+          <p class="text-gray-600 text-sm">Ofrecemos planes mensuales de soporte y mantenimiento técnico. Nos encargamos de que tus servidores estén activos, tus bases de datos respaldadas y resolvemos cualquier caída del servicio.</p>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+          <h3 class="text-base font-bold text-gray-900 mb-2">¿Necesito saber de programación para administrar mi sistema?</h3>
+          <p class="text-gray-600 text-sm">Para nada. Te entregamos interfaces completamente visuales, intuitivas y limpias (estilo tablero o botones sencillos) diseñadas para usuarios no técnicos.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section
     id="contacto"
-    class="flex flex-col items-center justify-center text-center px-6 py-20 md:py-28 bg-gray-50"
+    class="py-20 px-6 bg-gray-50 border-t border-gray-100 flex flex-col items-center"
   >
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-      ¿Hablamos sobre tu negocio? 📩
-    </h2>
-    <p class="text-gray-600 max-w-2xl mb-10">
-      Cuéntanos qué proceso te quita más tiempo o qué sistema necesitas
-      construir y te ofreceremos un diagnóstico completamente gratuito.
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">¿Hablamos sobre tu negocio? 📩</h2>
+    <p class="text-gray-600 max-w-2xl mb-10 text-center">
+      Cuéntanos qué proceso te quita más tiempo o qué sistema necesitas construir y te ofreceremos un diagnóstico completamente gratuito.
     </p>
 
-    <form
-      class="w-full max-w-lg bg-white shadow-lg rounded-2xl p-8 flex flex-col gap-4 border border-gray-100"
-    >
+    <form class="w-full max-w-lg bg-white shadow-lg rounded-2xl p-8 flex flex-col gap-4 border border-gray-100">
       <div class="flex flex-col text-left">
-        <label for="nombre" class="font-medium text-gray-700 mb-1"
-          >Nombre de contacto</label
-        >
+        <label for="nombre" class="font-medium text-gray-700 mb-1">Nombre de contacto</label>
         <input
           type="text"
           id="nombre"
@@ -275,9 +295,7 @@ import heroImage from "../assets/indexImage.svg";
       </div>
 
       <div class="flex flex-col text-left">
-        <label for="email" class="font-medium text-gray-700 mb-1"
-          >Correo electrónico</label
-        >
+        <label for="email" class="font-medium text-gray-700 mb-1">Correo electrónico</label>
         <input
           type="email"
           id="email"
@@ -289,9 +307,7 @@ import heroImage from "../assets/indexImage.svg";
       </div>
 
       <div class="flex flex-col text-left">
-        <label for="mensaje" class="font-medium text-gray-700 mb-1"
-          >¿Qué proceso te gustaría optimizar o automatizar?</label
-        >
+        <label for="mensaje" class="font-medium text-gray-700 mb-1">¿Qué proceso te gustaría optimizar o automatizar?</label>
         <textarea
           id="mensaje"
           name="mensaje"
@@ -310,9 +326,7 @@ import heroImage from "../assets/indexImage.svg";
 
       <div class="relative flex py-2 items-center">
         <div class="flex-grow border-t border-gray-300"></div>
-        <span class="flex-shrink mx-4 text-gray-400 text-sm font-medium"
-          >O prefiéres</span
-        >
+        <span class="flex-shrink mx-4 text-gray-400 text-sm font-medium">O prefieres</span>
         <div class="flex-grow border-t border-gray-300"></div>
       </div>
 
@@ -322,78 +336,11 @@ import heroImage from "../assets/indexImage.svg";
         rel="noopener noreferrer"
         class="bg-[#25D366] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#20ba56] transition duration-300 flex items-center justify-center gap-2"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.4.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.845-4.414 9.848-9.843.002-2.63-1.023-5.101-2.884-6.964C17.16 1.944 14.685 1.18 12.01 1.18 6.58 1.18 2.165 5.594 2.162 11.023c-.001 1.83.477 3.62 1.39 5.2l-.157.572-1.042 3.805 3.898-1.023.596.354z"
-          ></path>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.4.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.845-4.414 9.848-9.843.002-2.63-1.023-5.101-2.884-6.964C17.16 1.944 14.685 1.18 12.01 1.18 6.58 1.18 2.165 5.594 2.162 11.023c-.001 1.83.477 3.62 1.39 5.2l-.157.572-1.042 3.805 3.898-1.023.596.354z"></path>
         </svg>
         Chatear con un asesor por WhatsApp
       </a>
     </form>
-  </section>
-
-  <section
-    class="py-20 px-6 bg-white border-t border-gray-100 flex flex-col items-center"
-  >
-    <div class="max-w-3xl mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">
-          Preguntas <span class="text-primary">Frecuentes</span>
-        </h2>
-        <p class="text-gray-600 mt-2">Despeja tus dudas antes de empezar.</p>
-      </div>
-
-      <div class="space-y-6">
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-          <h3 class="text-base font-bold text-gray-900 mb-2">
-            ¿Tengo que pagar licencias mensuales caras de software?
-          </h3>
-          <p class="text-gray-600 text-sm">
-            No necesariamente. Intentamos usar herramientas de código abierto o
-            servidores propios económicos (VPS) para que tu costo de
-            mantenimiento sea el mínimo posible.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-          <h3 class="text-base font-bold text-gray-900 mb-2">
-            ¿Cuánto cuesta un proyecto a medida?
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Depende de la complejidad. Una automatización sencilla de flujos
-            puede arrancar desde un valor muy accesible, mientras que un sistema
-            web interno completo varía según las funciones. Te damos un precio
-            cerrado en la propuesta.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-          <h3 class="text-base font-bold text-gray-900 mb-2">
-            ¿Qué pasa si algo se daña o deja de funcionar?
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Ofrecemos planes mensuales de soporte y mantenimiento técnico. Nos
-            encargamos de que tus servidores estén activos, tus bases de datos
-            respaldadas y resolvemos cualquier caída del servicio.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-          <h3 class="text-base font-bold text-gray-900 mb-2">
-            ¿Necesito saber de programación para administrar mi sistema?
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Para nada. Te entregamos interfaces completamente visuales,
-            intuitivas y limpias (estilo tablero o botones sencillos) diseñadas
-            para usuarios no técnicos.
-          </p>
-        </div>
-      </div>
-    </div>
   </section>
 </MainLayout>
