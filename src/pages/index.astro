@@ -17,10 +17,7 @@ import heroImage from "../assets/indexImage.svg";
     </svg>
   </a>
 
-  <section
-    class="flex flex-col items-center justify-center text-center px-6 pt-28 pb-20 md:pt-36 md:pb-28 bg-white"
-    id="inicio"
-  >
+  <section class="flex flex-col items-center justify-center text-center px-6 pt-28 pb-20 md:pt-36 md:pb-28 bg-white" id="inicio">
     <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 max-w-3xl leading-tight">
       Digitaliza tu operación y <span class="text-primary">elimina el desorden</span> de los Excel infinitos
     </h1>
@@ -37,10 +34,7 @@ import heroImage from "../assets/indexImage.svg";
       >
         Agendar Diagnóstico Gratis (WhatsApp)
       </a>
-      <a
-        href="#contacto"
-        class="inline-block border-2 border-primary text-primary font-semibold px-6 py-3 rounded-full hover:bg-primary hover:text-white transition duration-300"
-      >
+      <a href="#contacto" class="inline-block border-2 border-primary text-primary font-semibold px-6 py-3 rounded-full hover:bg-primary hover:text-white transition duration-300">
         Escribir por Correo
       </a>
     </div>
@@ -50,10 +44,7 @@ import heroImage from "../assets/indexImage.svg";
     </div>
   </section>
 
-  <section
-    id="servicios"
-    class="px-6 py-20 md:py-28 bg-gray-50 flex flex-col items-center text-center"
-  >
+  <section id="servicios" class="px-6 py-20 md:py-28 bg-gray-50 flex flex-col items-center text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
       Cómo transformamos <span class="text-primary">tu negocio</span>
     </h2>
@@ -281,7 +272,12 @@ import heroImage from "../assets/indexImage.svg";
       Cuéntanos qué proceso te quita más tiempo o qué sistema necesitas construir y te ofreceremos un diagnóstico completamente gratuito.
     </p>
 
-    <form class="w-full max-w-lg bg-white shadow-lg rounded-2xl p-8 flex flex-col gap-4 border border-gray-100">
+    <form id="contactForm" class="w-full max-w-lg bg-white shadow-lg rounded-2xl p-8 flex flex-col gap-4 border border-gray-100">
+      
+      <input type="hidden" name="access_key" value="5bf76e4a-3506-4e84-907d-f4d274ea70a0" />
+      <input type="hidden" name="subject" value="Nuevo Lead - Nexo Dev Landing" />
+      <input type="hidden" name="redirect" value="" />
+
       <div class="flex flex-col text-left">
         <label for="nombre" class="font-medium text-gray-700 mb-1">Nombre de contacto</label>
         <input
@@ -319,7 +315,8 @@ import heroImage from "../assets/indexImage.svg";
 
       <button
         type="submit"
-        class="mt-4 bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition duration-300"
+        id="submitBtn"
+        class="mt-4 bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         Enviar Solicitud por Correo
       </button>
@@ -344,3 +341,48 @@ import heroImage from "../assets/indexImage.svg";
     </form>
   </section>
 </MainLayout>
+
+<script is:inline>
+  const form = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      submitBtn.disabled = true;
+      submitBtn.innerText = "Enviando...";
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          },
+          body: json
+      })
+      .then(async (response) => {
+          let res = await response.json();
+          if (response.status == 200) {
+              alert("¡Solicitud enviada con éxito! Nos pondremos en contacto contigo pronto.");
+              form.reset();
+          } else {
+              console.log(response);
+              alert("Hubo un problema: " + res.message);
+          }
+      })
+      .catch(error => {
+          console.log(error);
+          alert("Error de conexión. Por favor, intenta escribirnos por WhatsApp.");
+      })
+      .then(() => {
+          submitBtn.disabled = false;
+          submitBtn.innerText = "Enviar Solicitud por Correo";
+      });
+    });
+  }
+</script>
